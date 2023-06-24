@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello!</title>
+</head>
+<body>
+
+<form>
+    {% if value==1 %}
+        <p>Target action will happen. Processed row --></p>
+        <p><table border="1" class="dataframe"> <thead> <tr style="text-align: right;"> <th></th> <th>0</th> </tr> </thead> <tbody> <tr> <th>session_id</th> <td>{{ row['session_id'] }}</td> </tr> <tr> <th>client_id</th> <td>{{ row['client_id'] }}</td> </tr> <tr> <th>visit_date</th> <td>{{ row['visit_date'] }}</td> </tr> <tr> <th>visit_time</th> <td>{{ row['visit_time'] }}</td> </tr> <tr> <th>visit_number</th> <td>{{ row['visit_number'] }}</td> </tr> <tr> <th>utm_source</th> <td>{{ row['utm_source'] }}</td> </tr> <tr> <th>utm_medium</th> <td>{{ row['utm_medium'] }}</td> </tr> <tr> <th>utm_campaign</th> <td>{{ row['utm_campaign'] }}</td> </tr> <tr> <th>utm_adcontent</th> <td>{{ row['utm_adcontent'] }}</td> </tr> <tr> <th>utm_keyword</th> <td>{{ row['utm_keyword'] }}</td> </tr> <tr> <th>device_category</th> <td>{{ row['device_category'] }}</td> </tr> <tr> <th>device_os</th> <td>{{ row['device_os'] }}</td> </tr> <tr> <th>device_brand</th> <td>{{ row['device_brand'] }}</td> </tr> <tr> <th>device_model</th> <td>{{ row['device_model'] }}</td> </tr> <tr> <th>device_screen_resolution</th> <td>{{ row['device_screen_resolution'] }}</td> </tr> <tr> <th>device_browser</th> <td>{{ row['device_browser'] }}</td> </tr> <tr> <th>geo_country</th> <td>{{ row['geo_country'] }}</td> </tr> <tr> <th>geo_city</th> <td>{{ row['geo_city'] }}</td> </tr> </tbody> </table></p>
+    {% elif value==0 %}
+        <p>Target action won't happen. Processed row --></p>
+        <p><table border="1" class="dataframe"> <thead> <tr style="text-align: right;"> <th></th> <th>0</th> </tr> </thead> <tbody> <tr> <th>session_id</th> <td>{{ row['session_id'] }}</td> </tr> <tr> <th>client_id</th> <td>{{ row['client_id'] }}</td> </tr> <tr> <th>visit_date</th> <td>{{ row['visit_date'] }}</td> </tr> <tr> <th>visit_time</th> <td>{{ row['visit_time'] }}</td> </tr> <tr> <th>visit_number</th> <td>{{ row['visit_number'] }}</td> </tr> <tr> <th>utm_source</th> <td>{{ row['utm_source'] }}</td> </tr> <tr> <th>utm_medium</th> <td>{{ row['utm_medium'] }}</td> </tr> <tr> <th>utm_campaign</th> <td>{{ row['utm_campaign'] }}</td> </tr> <tr> <th>utm_adcontent</th> <td>{{ row['utm_adcontent'] }}</td> </tr> <tr> <th>utm_keyword</th> <td>{{ row['utm_keyword'] }}</td> </tr> <tr> <th>device_category</th> <td>{{ row['device_category'] }}</td> </tr> <tr> <th>device_os</th> <td>{{ row['device_os'] }}</td> </tr> <tr> <th>device_brand</th> <td>{{ row['device_brand'] }}</td> </tr> <tr> <th>device_model</th> <td>{{ row['device_model'] }}</td> </tr> <tr> <th>device_screen_resolution</th> <td>{{ row['device_screen_resolution'] }}</td> </tr> <tr> <th>device_browser</th> <td>{{ row['device_browser'] }}</td> </tr> <tr> <th>geo_country</th> <td>{{ row['geo_country'] }}</td> </tr> <tr> <th>geo_city</th> <td>{{ row['geo_city'] }}</td> </tr> </tbody> </table></p>
+    {% else %}
+        <p>Something is wrong</p>
+    {% endif %}
+</form>
+</body>
+</html>

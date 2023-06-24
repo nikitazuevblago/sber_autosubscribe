@@ -1,0 +1,2 @@
+*.csv filter=lfs diff=lfs merge=lfs -text
+data/ga_sessions.csv filter=lfs diff=lfs merge=lfs -text
